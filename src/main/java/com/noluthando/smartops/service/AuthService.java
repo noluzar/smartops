@@ -27,11 +27,14 @@ public class AuthService {
             throw new RuntimeException("Email already in use");
         }
 
+        // Default to MEMBER if no role provided
+        Role role = request.getRole() != null ? request.getRole() : Role.MEMBER;
+
         User user = User.builder()
                 .fullName(request.getFullName())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .role(Role.MEMBER)
+                .role(role)
                 .build();
 
         userRepository.save(user);
