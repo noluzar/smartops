@@ -1,10 +1,9 @@
-com\noluthando\smartops\security\JwtAuthFilter.class
 com\noluthando\smartops\service\UserDetailsServiceImpl.class
+com\noluthando\smartops\entity\User.class
 com\noluthando\smartops\entity\User$UserBuilder.class
-com\noluthando\smartops\repository\UserRepository.class
-com\noluthando\smartops\security\JwtUtil.class
 com\noluthando\smartops\enums\Role.class
 com\noluthando\smartops\SmartopsApplication.class
-com\noluthando\smartops\SecurityConfig.class
-com\noluthando\smartops\entity\User.class
 com\noluthando\smartops\security\SecurityConfig.class
+com\noluthando\smartops\security\JwtAuthFilter.class
+com\noluthando\smartops\repository\UserRepository.class
+com\noluthando\smartops\security\JwtUtil.class
